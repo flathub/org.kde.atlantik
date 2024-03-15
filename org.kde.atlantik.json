@@ -46,6 +46,10 @@
                 {
                     "type": "file",
                     "path": "org.kde.atlantik.png"
+                },
+                {
+                    "type": "patch",
+                    "path": "0001-aboutdata-Update-website.patch"
                 }
             ]
         }
