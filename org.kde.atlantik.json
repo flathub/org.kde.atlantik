@@ -41,15 +41,11 @@
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/games/atlantik.git",
-                    "commit": "d26aad5e37411c45c8d3247ab2c567d3d43e9948"
+                    "commit": "758b070f7418dfa3c7d3d29c2fb76456beac7eff"
                 },
                 {
                     "type": "file",
                     "path": "org.kde.atlantik.png"
-                },
-                {
-                    "type": "patch",
-                    "path": "0001-aboutdata-Update-website.patch"
                 }
             ]
         }
