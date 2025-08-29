@@ -17,6 +17,10 @@
         {
             "name": "libkdegames",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
             "sources": [
                 {
                     "type": "archive",
@@ -34,6 +38,10 @@
         {
             "name": "atlantik",
             "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DBUILD_TESTING=OFF",
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            ],
             "post-install": [
                 "install -Dm0644 org.kde.atlantik.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/org.kde.atlantik.png"
             ],
