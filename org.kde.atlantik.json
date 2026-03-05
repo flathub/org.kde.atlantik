@@ -16,6 +16,9 @@
     "cleanup": [
         "/include",
         "/lib/cmake",
+        "/lib/qml",
+        "/share/carddecks",
+        "/share/doc",
         "/share/qlogging-categories6"
     ],
     "modules": [
@@ -48,17 +51,13 @@
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
             ],
             "post-install": [
-                "install -Dm0644 org.kde.atlantik.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/org.kde.atlantik.png"
+                "install -Dm0644 logo.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/org.kde.atlantik.png"
             ],
             "sources": [
                 {
                     "type": "git",
                     "url": "https://invent.kde.org/games/atlantik.git",
                     "commit": "758b070f7418dfa3c7d3d29c2fb76456beac7eff"
-                },
-                {
-                    "type": "file",
-                    "path": "org.kde.atlantik.png"
                 }
             ]
         }
